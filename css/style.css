@@ -1,0 +1,427 @@
+:root{
+    --brand: #20AD96;
+    --brand-dark: #028176;
+    --brand-light: #F3FFFD;
+    --title: #333333;
+    --black: black;
+    --text: #666666;
+    --gradient: #20AD96 #028176;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:"Poppins",sans-serif;
+    background-color: var (--brand-light);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Poppins", sans-serif;
+    line-height: 105%;
+    color:var(--title);
+}
+
+h2{
+    font-size: 48px;
+}
+
+p{
+    color: var(--text);
+    line-height: 130%;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+.header{
+    background-color: white;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    position: sticky; 
+    top: 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display:flex;
+    column-gap: 100px;
+}
+
+.menu a{
+    color: var(--text);
+    font-family: var(--font-title);
+    font-size: 15px; 
+}
+
+.menu a:hover{
+    color: var(--brand);
+}
+
+.hero{
+    height: 100vh;
+    background-image: url(../img/background_hero\ \(1\).webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.hero p{
+    font-size: 20px;
+    color: white;
+    max-width: 650px;
+}
+
+.hero .slogan{
+    color:white;
+}
+
+.hero h1{
+    color: white;
+    font-size: 60px;
+    line-height: 90%; 
+    margin-top: 10px;
+    max-width: 600px;
+}
+
+.hero .container{
+    margin-top: 100px;
+}
+
+/************UTILS************/
+
+.container{
+    width: 100%;
+    max-width: 1140px;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    }
+    
+.btn{
+    display: inline-block;
+    padding: 12px 48px;
+    background-color: var(--brand);
+    margin-top: 24px;
+    border-radius: 10px;
+    color: white;
+    transition: 1s;
+}
+
+.btn:hover{
+    transform: scale(1.05);
+}
+
+/************UTILS************/
+
+/************SOBRE***********/
+
+.sobre{
+    padding-top: 100px;
+    padding-bottom: 75px;
+}
+
+.sobre .container{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+
+.sobre h2 {
+    color: var(--title);
+    margin-bottom: 35px;
+    font-size: 40px;
+}
+
+.sobre p{
+    color: var(--text);
+}
+
+.sobre figcaption{
+    color: var(--text)
+}
+
+/************SOBRE***********/
+
+/************SERVIÇOS***********/
+
+.servicos {
+  justify-content: center; 
+  align-items: center;  
+  height: 100vh;   
+  padding-bottom: 50px;
+  text-align: center;       
+}
+
+.servicos .container .content-servicos p {
+    margin-bottom: 50px;
+    max-width: 750px;
+    margin-left: 200px;
+   
+}
+
+.servicos .cards h3 {
+    color: var(--brand);
+    font-size: 26px; 
+}
+
+.servicos .container {
+    align-items: center;
+}
+
+.servicos .servicos-1 {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 30px;
+}
+
+.servicos .servicos-2 {
+    display: flex;
+    gap: 30px;
+}
+.servicos .cards .check-up-link {
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;  
+    align-items: center;      
+    text-align: center;                   
+    background-color: #ffffff; 
+    border-radius: 8px;       
+    padding: 5px 0px;            
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); 
+    width: 300px;
+    min-height: 200px;
+    min-width: 350px;
+    border: 2px solid #f0f0f0;
+}
+
+.servicos .cards .clareamento-link {
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;  
+    align-items: center;      
+    text-align: center;                   
+    background-color: #ffffff; 
+    border-radius: 8px;       
+    padding: 5px 0px;            
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); 
+    width: 300px;
+    min-height: 200px;
+    min-width: 350px;
+    border: 2px solid #f0f0f0; 
+}
+
+
+.servicos .cards .ortodontia-link {
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;  
+    align-items: center;      
+    text-align: center;                   
+    background-color: #ffffff; 
+    border-radius: 8px;       
+    padding: 5px 0px;            
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); 
+    width: 300px;
+    min-height: 200px;
+    min-width: 350px;
+    border: 2px solid #f0f0f0;
+}
+
+.servicos .cards .implantes-link {
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;  
+    align-items: center;      
+    text-align: center;                   
+    background-color: #ffffff; 
+    border-radius: 8px;       
+    padding: 5px 0px;            
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); 
+    width: 300px;
+    min-height: 200px;
+    min-width: 350px;
+    border: 2px solid #f0f0f0;
+}
+.servicos .cards .proteses-link {
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;  
+    align-items: center;      
+    text-align: center;                   
+    background-color: #ffffff; 
+    border-radius: 8px;       
+    padding: 5px 0px;            
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); 
+    width: 300px;
+    min-height: 200px;
+    min-width: 350px;
+    border: 2px solid #f0f0f0;
+            
+}
+
+.servicos .cards .tratamento-link {
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;  
+    align-items: center;      
+    text-align: center;                   
+    background-color: #ffffff; 
+    border-radius: 8px;       
+    padding: 5px 0px;            
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); 
+    width: 300px;
+    min-height: 200px;
+    min-width: 350px;
+    border: 2px solid #f0f0f0; 
+}
+
+/************SERVIÇOS***********/
+
+/************AGENDE*************/
+
+.agende {
+    background-image: linear-gradient(to right, var(--brand-dark), var(--brand));
+    padding-top: 20px;
+}
+.agende .btn {
+    color: var(--brand);
+    background-color: var(--brand-light);
+    
+}
+
+.agende .container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 70px;
+}
+
+.agende .content-agende h2{
+    color: var(--brand-light);
+    font-size: 40px;
+    margin-top: 40px;
+
+}
+
+.agende .content-agende{
+    padding-bottom: 0px;
+}
+
+.agende .content-agende p{
+    color: var(--brand-light);
+    margin-bottom: 0px;  
+}
+
+.agende .imagem img {
+    display: block; 
+}
+/************AGENDE*************/
+
+/**********DEPOIMENTOS***********/
+.depoimentos{
+    padding-top: 128px;
+    padding-bottom: 128px;
+    text-align: center;
+}
+
+.depoimentos h2{
+    margin-bottom: 40px;
+}
+
+.depoimentos p{
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 30px;
+    
+}
+
+.depoimentos span{
+    color: var(--brand);
+    font-size: 14px;
+}
+
+/**********DEPOIMENTOS***********/
+
+/*********INFORMAÇÕES************/
+
+.informacoes {
+    padding-top: 10px;
+    padding-bottom: 90px;
+}
+
+.informacoes .container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 24px;
+}
+
+.informacoes h2{
+    max-width: 500px;
+    margin-bottom: 25px;
+}
+
+.informacoes h3{
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.informacoes h3 {
+    color: var(--brand)
+}
+
+/*********INFORMAÇÕES************/
+
+/*************LINKS**************/
+
+.links {
+
+    background-image: linear-gradient(to right, var(--brand-dark), var(--brand));
+}
+
+.links .container{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.links p{
+
+    color: var(--brand-light)
+}
+
+.links .imagens{
+    padding-top: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+/*************LINKS**************/
